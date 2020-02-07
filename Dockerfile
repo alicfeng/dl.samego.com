@@ -48,7 +48,6 @@ COPY nginx/conf.d/ /etc/nginx/conf.d/
 COPY --chown=www:www src /var/www/app
 COPY --chown=www:www files /var/www/app/files
 
-
 WORKDIR /var/www/app
 EXPOSE 80 443
 CMD ["docker-entrypoint.sh"]
